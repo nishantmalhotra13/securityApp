@@ -9,6 +9,9 @@ import java.util.Collections;
 
 public class UserPrinciple implements UserDetails {
 
+    /*
+    This class's object will be initialised with current user values. This is done by argumented constructor.
+     */
     private User user;
 
     public UserPrinciple(User user) {

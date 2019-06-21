@@ -20,4 +20,10 @@ public class MyUserDetailsService implements UserDetailsService {
         }
         return new UserPrinciple(user);
     }
+
+    /*
+    The method returns the object of type UserDetails, but UserDetais is an interface . so we can't make an object of it. In order to return the object of
+    type UserDetails, we make a class UserPrinciple which implements UserDetails,a nd implement the methods. These methods will set the loggend in user credentials and
+    manage authorisation. It will then return the object of UserPrinciple with state values of current user.
+     */
 }
